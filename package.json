@@ -16,8 +16,8 @@
   "homepage": "./",
   "license": "ISC",
   "build": {
-    "productName": "Browser",
-    "appId": "com.paulkoeck.Browser",
+    "productName": "Minimal Browser",
+    "appId": "com.paulkoeck.minimalbrowser",
     "files": [
       "app.js",
       "./conf/**",
@@ -25,17 +25,17 @@
       "build/**/*"
     ],
     "win": {
-      "icon": "./assets/icon.ico"
+      "icon": "./assets/icons/win/icon.ico"
     },
     "linux": {
-      "icon": "assets/icon.icns",
+      "icon": "./assets/icons/win/mac/icon.icns",
       "target": [
         "AppImage",
         "deb"
       ]
     },
     "mac": {
-      "icon": "./assets/icon.ico"
+      "icon": "./assets/icons/win/mac/icon.icns"
     },
     "extraMetadata": {
       "main": "./app.js"
