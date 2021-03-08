@@ -1,7 +1,7 @@
 {
-  "name": "Browser",
+  "name": "minimalbrowser",
   "version": "1.0.0",
-  "description": "Browser",
+  "description": "Minimal Browser",
   "main": "./app.js",
   "scripts": {
     "dev": "electron .",
