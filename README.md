@@ -8,7 +8,7 @@ A minimalistic Browser
 
 ![alt example](https://github.com/paulkoeckdev/MinimalBrowser/blob/main/example.png?raw=true)
 
-## Installations
+## Installation
 
 You can download the installer [here!](../../releases/)
 
