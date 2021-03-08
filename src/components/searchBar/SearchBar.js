@@ -63,9 +63,9 @@ function SearchBar() {
     <div>
       <div className={styles.bar}>
         <nav className={styles.nav}>
-          <img src={Back} onClick={() => click("back")} />
-          <img src={Forward} onClick={() => click("forward")} />
-          <img src={loading ? Close : Refresh} onClick={refresh} />
+          <img draggable={false} src={Back} onClick={() => click("back")} />
+          <img draggable={false} src={Forward} onClick={() => click("forward")} />
+          <img draggable={false} src={loading ? Close : Refresh} onClick={refresh} />
         </nav>
         <div className={styles.inputBox}>
           <input

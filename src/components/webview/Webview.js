@@ -14,6 +14,7 @@ function Webview() {
     return () => {
       ipcRenderer.removeAllListeners("button:click");
       ipcRenderer.removeAllListeners("search:submit");
+      ipcRenderer.removeAllListeners("keybind:tab");
     };
   });
 

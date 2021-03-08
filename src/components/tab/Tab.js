@@ -14,7 +14,7 @@ function Tab(props) {
         {props.title}
       </p>
       <button className={styles.close} onClick={props.close}>
-        <img src={Close} />
+        <img draggable={false} src={Close} />
       </button>
     </div>
   );
