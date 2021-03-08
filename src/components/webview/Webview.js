@@ -30,6 +30,12 @@ function Webview() {
       obj.loadURL(TabsManager.getRightUrl(data.value));
     });
 
+    // Listens for Ctrl + T
+    ipcRenderer.on("keybind:tab", data => {
+      TabsManager.add()
+    })
+
+
     // Listen for button click
     ipcRenderer.on("button:click", (data) => {
       let webview = getActiveWebview();

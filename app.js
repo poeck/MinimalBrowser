@@ -8,6 +8,7 @@ const Tray = require("./util/tray");
 const log = require("electron-log");
 const AutoLaunch = require("auto-launch");
 const Window = require("./util/window");
+const KeyBindings = require("./util/keybindings")
 
 /** Config */
 const APP_CONF = require("./conf/app.conf");
@@ -44,6 +45,7 @@ async function whenReady() {
 
   Events.listen(); // Register App events
   Window.create(); // Create window
+  KeyBindings.register() // Register keybindings
 }
 
 app.on("ready", whenReady);
