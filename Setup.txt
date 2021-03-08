@@ -1,9 +1,0 @@
-1. Rename folder
-2. $ npm install
-3. package.json replace "APPNAME" with name
-4. Replace icon .ico, .png & .icns
-5. Check app.conf.js
-6. Change title in index.html
-7. Copy icon.ico into public/favicon.ico
-8. Try to run
-9. Done!
