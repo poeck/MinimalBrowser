@@ -1,0 +1,51 @@
+.tab {
+  height: 100%;
+  width: 220px;
+  background: var(--tab-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 3px;
+  text-align: left;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  flex-shrink: 1;
+  padding: 0 5px;
+}
+
+.title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  white-space: nowrap;
+  font-size: 12px;
+  text-align: left;
+  padding-right: 3px;
+  margin-left: 10px;
+}
+
+.active {
+  background: var(--secondary-bg);
+}
+
+.close {
+  margin-left: 5px;
+  padding: 5px;
+  height: var(--title-bar-size);
+  width: var(--title-bar-size);
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+}
+
+.close:hover {
+  background: rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,92 @@
+{
+  "name": "Browser",
+  "version": "1.0.0",
+  "description": "Browser",
+  "main": "./app.js",
+  "scripts": {
+    "dev": "electron .",
+    "react-start": "react-scripts start",
+    "react-build": "react-scripts build",
+    "build-wml": "electron-builder --wml",
+    "build-linux": "electron-builder --linux",
+    "build-win": "electron-builder --win",
+    "build-mac": "electron-builder --mac"
+  },
+  "private": true,
+  "homepage": "./",
+  "license": "ISC",
+  "build": {
+    "productName": "Browser",
+    "appId": "com.paulkoeck.Browser",
+    "files": [
+      "app.js",
+      "./conf/**",
+      "./util/**/*",
+      "build/**/*"
+    ],
+    "win": {
+      "icon": "./assets/icon.ico"
+    },
+    "linux": {
+      "icon": "assets/icon.icns",
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "mac": {
+      "icon": "./assets/icon.ico"
+    },
+    "extraMetadata": {
+      "main": "./app.js"
+    },
+    "extraResources": [
+      {
+        "from": "./assets/",
+        "to": "assets",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "nsis": {
+      "createStartMenuShortcut": true,
+      "createDesktopShortcut": "always"
+    }
+  },
+  "author": {
+    "name": "Paul Koeck",
+    "email": "paul.koeck@gmx.net",
+    "url": "https://paul.koeck.dev"
+  },
+  "dependencies": {
+    "auto-launch": "^5.0.5",
+    "electron-is-dev": "^1.2.0",
+    "electron-log": "^4.3.1",
+    "is-online": "^9.0.0",
+    "node-storage": "0.0.9"
+  },
+  "devDependencies": {
+    "electron": "^11.2.3",
+    "electron-builder": "^22.9.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

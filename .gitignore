@@ -1,0 +1,8 @@
+# Node Modules (Ignored due to size)
+node_modules/
+# Electron Build
+dist/
+# React Build (optional)
+build/
+# Development Prefs
+storage.json

@@ -1,0 +1,12 @@
+.webview {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: calc(100vh - (var(--search-bar-size) + var(--app-bar-size)));
+  width: 100vw;
+  display: none;
+}
+
+.active {
+  display: flex !important;
+}

@@ -1,0 +1,57 @@
+.bar {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: var(--app-bar-size);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  -webkit-user-select: none;
+}
+
+.navContainer {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.draggable {
+  height: 100%;
+  width: 100%;
+  -webkit-app-region: drag;
+}
+
+.button {
+  padding: 0;
+  background: transparent;
+  height: var(--app-bar-size);
+  width: var(--app-bar-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border-radius: 0;
+}
+
+.button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+#minimize {
+  height: 50%;
+}
+
+#close {
+  height: 60%;
+}
+
+.messageBox {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+}
