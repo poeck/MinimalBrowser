@@ -57,7 +57,7 @@ function TabBox() {
         })}
       </div>
       <button className={styles.plus} onClick={add}>
-        <img draggable={false} src={Plus} />
+        <img src={Plus} />
       </button>
       <div className={styles.draggable}></div>
     </div>
