@@ -50,7 +50,7 @@ function TabBox() {
               key={tab.id}
               active={tab.active}
               title={tab.title}
-              url={`https://www.google.com/s2/favicons?domain=${tab.url}`}
+              favicon={`https://www.google.com/s2/favicons?domain=${tab.url}`}
               close={() => close(tab.id)}
               onclick={() => click(tab.id)}
             />

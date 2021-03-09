@@ -10,7 +10,7 @@ function Tab(props) {
     <div
       className={props.active ? styles.tab + " " + styles.active : styles.tab}
     >
-    <img src={props.url}></img>
+    <img src={props.favicon}></img>
       <p onClick={props.onclick} className={styles.title}>
         {props.title}
       </p>
