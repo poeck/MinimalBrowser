@@ -5,11 +5,12 @@ import Close from "./close.svg";
 const { ipcRenderer } = window.require("electron");
 
 function Tab(props) {
-  /** Render */
+  /* Render */
   return (
     <div
       className={props.active ? styles.tab + " " + styles.active : styles.tab}
     >
+    <img src={props.url}></img>
       <p onClick={props.onclick} className={styles.title}>
         {props.title}
       </p>

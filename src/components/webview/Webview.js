@@ -15,6 +15,7 @@ function Webview() {
       ipcRenderer.removeAllListeners("button:click");
       ipcRenderer.removeAllListeners("search:submit");
       ipcRenderer.removeAllListeners("keybind:tab");
+      ipcRenderer.removeAllListeners("keybind:closeTab");
     };
   });
 
@@ -34,6 +35,11 @@ function Webview() {
     // Listens for Ctrl + T
     ipcRenderer.on("keybind:tab", data => {
       TabsManager.add()
+    })
+
+    // Listens for Ctrl + W
+    ipcRenderer.on("keybind:closeTab", data => {
+      TabsManager.closeCurrentTab()
     })
 
 

@@ -6,5 +6,8 @@ module.exports = {
     globalShortcut.register("CommandOrControl+T", () => {
       Window.win.send("keybind:tab");
     });
+    globalShortcut.register("CommandOrControl+W", () => {
+      Window.win.send("keybind:closeTab");
+    });
   },
 };

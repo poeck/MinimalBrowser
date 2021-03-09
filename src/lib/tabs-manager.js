@@ -185,13 +185,28 @@ class Tabs {
    * Creates new tab
    */
   static add() {
+    let newId = this.generateId();
     this.tabs.push({
       active: false,
       title: this.defaultTitle,
-      id: this.generateId(),
+      id: newId,
       url: this.defaultUrl,
     });
+    this.setActiveTab(newId)
     console.log("add - Invoke update");
+    this.invokeTabsUpdate();
+    this.invokeWebviewUpdate();
+  }
+
+  /**
+    * Closes the current tab
+  */
+  static closeCurrentTab() {
+    let currentTab;
+    this.tabs.forEach(tab => {
+      tab.active ? currentTab = tab : ""
+    })
+    this.closeTab(currentTab.id)
     this.invokeTabsUpdate();
     this.invokeWebviewUpdate();
   }
